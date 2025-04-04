@@ -1,0 +1,129 @@
+/* Reset default margin, padding, and set box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; /* Sets the default font */
+    box-sizing: border-box; /* Ensures padding and border are included in element's total width/height */
+}
+
+/* Body styling */
+body {
+    background-color: #222; /* Sets a dark background color */
+}
+
+/* Main card container */
+.card {
+    width: 90%; /* Responsive width */
+    max-width: 470px; /* Prevents card from getting too large */
+    background: linear-gradient(135deg, #00feba, #5b548a); /* Gradient background for a modern look */
+    color: #fff; /* White text for contrast */
+    margin: 100px auto 0; /* Centers the card vertically and horizontally */
+    border-radius: 20px; /* Smooth rounded corners */
+    padding: 40px 35px; /* Padding for spacing inside the card */
+    text-align: center; /* Centers text inside */
+}
+
+/* Search bar container */
+.search {
+    width: 100%;
+    display: flex; /* Aligns input and button in a row */
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Search input field */
+.search input {
+    border: 0; /* Removes border */
+    outline: 0; /* Removes focus outline */
+    background: #ebfffc; /* Light background for input field */
+    color: #555; /* Dark text for readability */
+    padding: 10px 25px; /* Adds space inside input */
+    height: 60px; /* Sets input field height */
+    border-radius: 30px; /* Rounds the input field */
+    flex: 1; /* Allows input to expand within the container */
+    margin-right: 16px; /* Spacing between input and button */
+    font-size: 18px; /* Adjusts text size */
+}
+
+/* Search button */
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc; /* Matches input field background */
+    border-radius: 50%; /* Makes button circular */
+    width: 60px;
+    height: 60px;
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+/* Search button icon */
+.search button img {
+    width: 16px; /* Adjusts search icon size */
+}
+
+/* Weather icon styling */
+.weather-icon {
+    width: 170px; /* Adjusts weather icon size */
+    margin-top: 30px; /* Adds space above icon */
+}
+
+/* Temperature display */
+.weather h1 {
+    font-size: 80px; /* Large font for temperature */
+    font-weight: 500;
+}
+
+/* City name styling */
+.weather h2 {
+    font-size: 45px; /* Large font for city name */
+    font-weight: 400;
+    margin-top: -10px; /* Adjusts spacing */
+}
+
+/* Weather details section */
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Aligns details evenly */
+    padding: 0 20px;
+    margin-top: 50px; /* Adds space between city and details */
+}
+
+/* Individual detail column (Humidity & Wind Speed) */
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left; /* Aligns text to the left */
+}
+
+/* Icons inside details section */
+.col img {
+    width: 40px; /* Adjusts icon size */
+    margin-right: 10px; /* Adds space between icon and text */
+}
+
+/* Humidity & Wind Speed text */
+.humidity, .wind {
+    font-size: 28px; /* Makes values easily readable */
+    margin-top: -6px;
+}
+
+/* Initially hides the weather section */
+.weather {
+    display: none;
+}
+
+/* Error message styling */
+.error {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none; /* Initially hidden */
+}
+
+/* Error message text */
+.error p {
+    color: red; /* Highlights error message */
+    font-weight: bold;
+}
